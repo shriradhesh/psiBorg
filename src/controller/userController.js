@@ -115,6 +115,7 @@ const { blacklistToken } = require('../utils/tokenBlacklist');
                         return res.status(200).json({
                             success: true,
                             message: "Login successful",
+                            user_details : user,
                             token,
                         });
                         
